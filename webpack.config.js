@@ -2,6 +2,7 @@ const path = require('path')
 const nodeExternals = require('webpack-node-externals')
 
 module.exports = {
+  mode: 'development',
   entry: './src/renderer/app.js',
   target: 'electron-renderer',
   externals: [nodeExternals()],
@@ -12,7 +13,7 @@ module.exports = {
   module: {
     rules: [{
       test: /\.js$/,
-      include: path.join(__dirname, 'src'),
+      include: path.resolve(__dirname, 'src'),
       loader: 'babel-loader',
       query: {
         presets: ['react', 'env'],
