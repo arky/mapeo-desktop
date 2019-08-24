@@ -26,9 +26,9 @@ matrix:
     - os: linux
     - os: osx
       osx_image: xcode10.2
-#    - os: windows
-#      env: YARN_GPG=no # Travis-CI Bug: gpg-agent hangs build task in windows
-#      cache: false     # Travis-CI Bug: cache stage fails to mount in windows
+    - os: windows
+      env: YARN_GPG=no # Travis-CI Bug: gpg-agent hangs build task in windows
+      cache: false     # Travis-CI Bug: cache stage fails to mount in windows
 
 # Use Yarn stable version 1.17.3 instead of Travis CI default 1.3.2
 before_install:
