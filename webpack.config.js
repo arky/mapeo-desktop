@@ -27,5 +27,11 @@ module.exports = {
         ]
       }
     }]
+  },
+  resolve: {
+    alias: {
+    // 'react$': path.resolve(__dirname, './node_modules/react/dist/react.min.js'),
+      'lodash$': path.resolve(__dirname, './node_modules/lodash/lodash.min.js')
+    }
   }
 }
