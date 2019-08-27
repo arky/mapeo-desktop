@@ -7,7 +7,7 @@ module.exports = {
   target: 'electron-renderer',
   externals: [nodeExternals({
     whitelist: ['/^lodash/', 'randombytes', 'react-intl'],
-     modulesDir: path.resolve(__dirname, 'node_modules')
+    modulesDir: path.resolve(__dirname, 'node_modules')
   })],
   output: {
     filename: 'static/build.js',
