@@ -14,7 +14,8 @@ module.exports = {
     resolve:
     {
       alias: {
-        'randombytes': './node_modules/randombytes/browser.js'
+        'randombytes': './node_modules/randombytes/browser.js',
+        'react-intl': './node_modules/react-intl/lib/index.es.js'
       }
       // 'randombytes': 'randombytes',
       // "./node_modules/randombytes/browser.js"
