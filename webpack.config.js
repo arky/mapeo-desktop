@@ -9,12 +9,6 @@ module.exports = {
     whitelist: ['randombytes', 'react-intl'],
     modulesDir: path.resolve(__dirname, 'node_modules')
   })],
-  lodash: {
-    commonjs: 'lodash',
-    commonjs2: 'lodash',
-    amd: 'lodash',
-    root: '_'
-  },
   output: {
     filename: 'static/build.js',
     libraryTarget: 'commonjs2'
@@ -34,10 +28,4 @@ module.exports = {
       }
     }]
   },
-  resolve: {
-    alias: {
-    // 'react$': path.resolve(__dirname, './node_modules/react/dist/react.min.js'),
-      'lodash$': path.resolve(__dirname, './node_modules/lodash/lodash.min.js')
-    }
-  }
 }
