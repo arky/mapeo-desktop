@@ -169,6 +169,15 @@
       ],
       "category": "Utility"
     },
+    "win": {
+      "icon": "build/mapeo_installer.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64", "ia32"]
+        }
+      ]
+    },
     "dmg": {
       "icon": "build/mapeo_installer.icns",
       "title": "${productName} v${version}",
