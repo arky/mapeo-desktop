@@ -20,7 +20,7 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'babel-loader',
       query: {
-        presets: ['react', 'env'],
+        presets: ['module:react', 'env'],
         plugins: [
           'transform-object-rest-spread',
           'transform-class-properties',
