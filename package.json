@@ -16,7 +16,7 @@
     "clean": "rimraf \"dist/\"",
     "pack": "electron-builder --dir",
     "dist": "electron-builder --publish=onTagOrDraft",
-    "build": "webpack",
+    "build": "webpack --verbose --color --debug --display-error-details",
     "lint": "standard",
     "test": "npm run lint && npm run test-integration",
     "test-integration": "tape test",
