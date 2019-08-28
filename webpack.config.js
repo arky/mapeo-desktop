@@ -6,9 +6,15 @@ module.exports = {
   entry: './src/renderer/app.js',
   target: 'electron-renderer',
   externals: [nodeExternals({
-    whitelist: ['/^lodash/', 'randombytes', 'react-intl'],
+    whitelist: ['randombytes', 'react-intl'],
     modulesDir: path.resolve(__dirname, 'node_modules')
   })],
+  lodash: {
+    commonjs: 'lodash',
+    commonjs2: 'lodash',
+    amd: 'lodash',
+    root: '_'
+  },
   output: {
     filename: 'static/build.js',
     libraryTarget: 'commonjs2'
