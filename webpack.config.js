@@ -13,9 +13,12 @@ module.exports = {
     modulesDir: path.resolve(__dirname, 'node_modules'),
     resolve:
     {
-      'randombytes': 'randombytes',
+      alias: {
+        'randombytes': './node_modules/randombytes/browser.js'
+      }
+      // 'randombytes': 'randombytes',
       // "./node_modules/randombytes/browser.js"
-      'react': 'react-intl'
+      // 'react': 'react-intl'
     }
 
   })],
