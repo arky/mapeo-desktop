@@ -34,9 +34,9 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'babel-loader',
       query: {
-        presets: ['react', 'env'],
+        presets: ['react', 'env', { 'targets': { 'node': 8 } }],
         plugins: [
-          // new webpack.ProvidePlugin({join: ['lodash', 'join']})
+          'lodash',
           'transform-object-rest-spread',
           'transform-class-properties',
           'transform-es2015-classes'
