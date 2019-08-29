@@ -37,8 +37,8 @@ module.exports = {
         presets: ['@babel/preset-react', '@babel/preset-env'],
         plugins: [
           'lodash',
-          'transform-object-rest-spread',
-          'transform-class-properties'
+          '@babel/plugin-proposal-object-rest-spread',
+          '@babel/plugin-proposal-class-properties'
         ]
       }
     }]
