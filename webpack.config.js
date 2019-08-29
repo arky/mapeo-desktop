@@ -34,12 +34,11 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'babel-loader',
       query: {
-        presets: ['react', 'env', { 'targets': { 'node': 8 } }],
+        presets: ['@babel/preset-react', '@babel/preset-env'],
         plugins: [
           'lodash',
           'transform-object-rest-spread',
-          'transform-class-properties',
-          'transform-es2015-classes'
+          'transform-class-properties'
         ]
       }
     }]
